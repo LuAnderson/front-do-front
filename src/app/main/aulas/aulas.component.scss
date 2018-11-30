@@ -1,0 +1,70 @@
+.aulas {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+    max-height: 106vw;
+    overflow: auto;
+
+    .caixa-semana {
+        display: inline-flex;
+        background: #565555;
+        border-radius: 10em;
+        margin: 6px;
+        width: -webkit-min-content;
+        width: -moz-min-content;
+        width: min-content;
+        justify-self: center;
+
+        .campo-apostila {
+            width: 4rem;
+            height: 4rem;
+            margin: 5px;
+            background: red;
+            border-radius: 50%;
+
+            .categoria {
+                display: block;
+                text-align: center;
+                margin: 15px 0 0 0;
+            }
+
+            .edição {
+                text-align: center;
+                display: block;
+            }
+            
+            .porcentagem-leitura {
+                text-align: center;
+                font-size: .5em;
+            }
+        }
+
+        .caixa-informacoes {
+            width: min-content;
+            display: inline-block;
+            text-align: center;
+           
+            .semana {
+                display: inline-block;
+                font-size: 1rem;
+                margin: 5px 0px;
+                text-align: center;
+                font-size: 0.75em;
+
+                .numero{
+                    display: block;
+                    font-size: 1.75em;
+                    font-weight: bolder;
+                }
+            }
+
+            .dias {
+                display: inline-block;
+                margin: 1em 0 0 0;
+                width: max-content;
+                font-size: .8em;
+            }
+        }
+    }
+}
