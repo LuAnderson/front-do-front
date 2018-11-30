@@ -1,0 +1,19 @@
+.footer {
+    display: inline-flex;
+    width: -webkit-fill-available;
+    background: #262626;
+    color: white;
+    padding: 15px;
+
+    div{
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        margin: auto;
+
+        i{
+            font-size: 2em;
+            margin: 15px;
+        }
+    }
+}
