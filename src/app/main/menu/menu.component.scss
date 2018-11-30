@@ -1,13 +1,14 @@
 .menu{
     color: white;
-    text-align: left;
-    padding: .75em 3rem;
+    font-size: 1.25em;
+    padding: .25em 3rem .75em 3rem;
 
     background: #262626;
     display: inline-flex;
     width: -webkit-fill-available;
 
     .qr-code {
+        color: #4a4a4a;
         text-align: right;
     }
     
@@ -19,6 +20,7 @@
 
         select{
             color: white;
+            font-weight: bold;
 
             background: transparent;
             border-color: transparent;
@@ -26,6 +28,7 @@
     }
 
     .chat {
+        color: #4a4a4a;
         text-align: right;
 
         display: inline-block;

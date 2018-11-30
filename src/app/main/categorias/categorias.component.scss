@@ -1,0 +1,16 @@
+.menu-divisoes{
+    font: 700 1em arial;
+    color: #4a4a4a;
+    padding: .75em 4rem;
+    text-transform: uppercase;
+
+    background: #262626;
+    display: inline-flex;
+    width: -webkit-fill-available;
+
+    .questoes {
+        text-align: center;
+        display: block;
+        width: -webkit-fill-available;
+    }
+}
