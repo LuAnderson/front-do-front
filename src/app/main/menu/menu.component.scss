@@ -1,0 +1,33 @@
+.menu{
+    color: white;
+    text-align: left;
+    padding: .75em 3rem;
+
+    background: #262626;
+    display: inline-flex;
+    width: -webkit-fill-available;
+
+    .qr-code {
+        text-align: right;
+    }
+    
+    .modalidade-curso {
+        text-align: center;
+
+        display: block;
+        width: -webkit-fill-available;
+
+        select{
+            color: white;
+
+            background: transparent;
+            border-color: transparent;
+        }
+    }
+
+    .chat {
+        text-align: right;
+
+        display: inline-block;
+    }
+}

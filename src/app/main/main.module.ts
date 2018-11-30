@@ -4,7 +4,10 @@ import { MainComponent } from './main.component';
 import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
-  declarations: [MainComponent, MenuComponent],
+  declarations: [
+    MainComponent,
+    MenuComponent,
+  ],
   imports: [
     CommonModule
   ]
