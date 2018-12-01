@@ -1,9 +1,9 @@
 .aulas {
     display: grid;
+    grid-gap: 10px;
     grid-template-columns: auto auto auto;
     background-color: #2196F3;
-    padding: 10px;
-    max-height: 106vw;
+    min-height: 210vw;
     overflow: auto;
 
     .caixa-semana {
@@ -46,11 +46,12 @@
             text-align: center;
            
             .semana {
-                display: inline-block;
                 font-size: 1rem;
-                margin: 5px 0px;
-                text-align: center;
                 font-size: 0.75em;
+                text-align: center;
+
+                display: inline-block;
+                margin: 5px 0px;
 
                 .numero{
                     display: block;
@@ -64,6 +65,29 @@
                 margin: 1em 0 0 0;
                 width: max-content;
                 font-size: .8em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .aulas {
+        grid-template-columns: auto auto;
+        grid-gap: 5px;
+        padding: 10px 0;
+
+        .caixa-semana{
+            margin: 4px;
+
+            .campo-apostila {
+                width: 3.5rem;
+                height: 3.5rem;
+            }
+
+            .caixa-informacoes{
+                .dias {
+                    font-size: .6em;
+                }
             }
         }
     }

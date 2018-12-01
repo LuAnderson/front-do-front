@@ -1,9 +1,12 @@
 .footer {
-    display: inline-flex;
-    width: -webkit-fill-available;
     background: #262626;
     color: white;
-    padding: 15px;
+    padding: 10px;
+
+    bottom: 0px;
+    display: inline-flex;
+    position: absolute;
+    width: -webkit-fill-available;
 
     div{
         display: block;
@@ -17,3 +20,31 @@
         }
     }
 }
+
+
+@media only screen and (max-width: 480px) {
+    .footer{
+        padding: 0px 0 10px 0;
+
+        div{
+            i{
+                font-size: 1.5em;
+            }
+            p{
+                font-size: .75em;
+            }
+        }
+    }
+}
+
+@media only screen 
+and (min-device-width : 480px) 
+and (max-device-width : 768px){
+    .footer{
+        padding: 5px;
+
+        p {
+            font-size: .75em;
+        }
+    }
+} 
