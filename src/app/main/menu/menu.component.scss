@@ -6,7 +6,8 @@
     background: #262626;
     display: inline-flex;
     width: -webkit-fill-available;
-
+    width: -moz-available;
+    
     .qr-code {
         color: #4a4a4a;
         text-align: right;
@@ -36,5 +37,14 @@
         text-align: right;
 
         display: inline-block;
+
+        i::before{
+            display: block;
+
+            -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
     }
 }
