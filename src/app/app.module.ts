@@ -1,4 +1,3 @@
-
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -9,7 +8,8 @@ import { MainComponent } from './main/main.component';
 import { MenuComponent } from './main/menu/menu.component';
 import { AulasComponent } from './main/aulas/aulas.component';
 import { FooterComponent } from './main/footer/footer.component';
-
+import { CardsComponent } from './simulados/cards/cards.component';
+import { SimuladosComponent } from './simulados/simulados.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,9 @@ import { FooterComponent } from './main/footer/footer.component';
     MenuComponent,
     CategoriasComponent,
     AulasComponent,
-    FooterComponent
+    FooterComponent,
+    SimuladosComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,

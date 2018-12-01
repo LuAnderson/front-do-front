@@ -1,0 +1,67 @@
+.card{
+    background: black;
+    height: 120px;
+    width: 220px;
+    margin: 2em;
+    padding: 20px;
+    display: inline-block;
+    border-left: 5px solid blue;
+    border-radius: 15px;
+
+    .situacao{
+        background: #FF5722;
+        position: relative;
+        top: -2.75em;
+        left: 8.5em;
+        padding: 20px 10px 10px 10px;
+        display: block;
+        max-width: -webkit-fit-content;
+        max-width: -moz-fit-content;
+        max-width: fit-content;
+        margin: 0px;
+        color: white;
+        font-weight: bold;
+        border-radius: 3px 0 0 0;
+
+        &::before{
+            content: "";
+            border-top: 20px solid transparent;
+            border-right: 20px solid #FF9800;
+            margin: -1em auto;
+            position: relative;
+            display: block;
+            left: -4.7em;
+        }
+    }
+
+    .modalidade{
+        color: white;
+        display: inline-block;
+        margin: auto;
+        font-size: 2em;
+        vertical-align: middle;
+        margin: 0.75em 0 0 0;
+
+        span{
+            font-weight: bold;
+        }
+    }
+
+    .descricao{
+        color: white;
+        font-size: .75em;
+    }
+
+    &.indisponivel{
+        background: #565454;
+        border-left: 5px solid lightgray;
+
+        .situacao{
+            background: gray;
+
+            &::before{
+                border-right: 20px solid black;
+            }
+        }
+    }
+}
