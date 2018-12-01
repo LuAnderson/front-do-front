@@ -46,7 +46,6 @@
             text-align: center;
            
             .semana {
-                font-size: 1rem;
                 font-size: 0.75em;
                 text-align: center;
 
@@ -80,13 +79,21 @@
             margin: 4px;
 
             .campo-apostila {
-                width: 3.5rem;
-                height: 3.5rem;
+                width: 13.5vw;
+                height: 13.5vw;
+
+                .categoria{
+                    margin: 2vw 0 0 0;
+                    font-size: 4vw;
+                }
             }
 
             .caixa-informacoes{
+                .semana{
+                    font-size: 3vw;
+                }
                 .dias {
-                    font-size: .6em;
+                    font-size: 2vw;
                 }
             }
         }
