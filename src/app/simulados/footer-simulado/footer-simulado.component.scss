@@ -1,0 +1,50 @@
+.footer-simulado{
+    background: #262626;
+    color: white;
+
+    bottom: 0px;
+    display: flex;
+    position: absolute;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    
+    div{
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        margin: auto;
+
+        i{
+            font-size: 2em;
+            margin: 15px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .footer-simulado{
+        padding: 0px 0 10px 0;
+
+        div{
+            i{
+                font-size: 5.5vw;
+            }
+            p{
+                font-size: 2.75vw;
+            }
+        }
+    }
+}
+
+@media only screen 
+and (min-device-width : 480px) 
+and (max-device-width : 768px){
+    .footer-simulado{
+        padding: 5px;
+
+        p {
+            font-size: .75em;
+        }
+    }
+} 

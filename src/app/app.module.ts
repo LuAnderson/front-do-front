@@ -1,4 +1,3 @@
-import { MenuSimuladoComponent } from './simulados/menu-simulado/menu-simulado.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -11,6 +10,8 @@ import { FooterComponent } from './main/footer/footer.component';
 import { CardsComponent } from './simulados/cards/cards.component';
 import { SimuladosComponent } from './simulados/simulados.component';
 import { routing } from './app-routing.module';
+import { FooterSimuladoComponent } from './simulados/footer-simulado/footer-simulado.component';
+import { MenuSimuladoComponent } from './simulados/menu-simulado/menu-simulado.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { routing } from './app-routing.module';
     SimuladosComponent,
     CardsComponent,
     MenuSimuladoComponent,
+    FooterSimuladoComponent,
   ],
   imports: [
     BrowserModule,
