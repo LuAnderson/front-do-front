@@ -1,10 +1,12 @@
-import { NgModule } from '@angular/core';
+import { ModuleWithProviders } from '@angular/compiler/src/core';
+
+import { MainComponent } from './main/main.component';
 import { Routes, RouterModule } from '@angular/router';
+import { SimuladosComponent } from './simulados/simulados.component';
 
-const routes: Routes = [];
+const APP_ROUTES: Routes = [
+  {path: '', component: MainComponent},
+  {path: 'desenvolvimento', component: SimuladosComponent},
+];
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+export const routing: ModuleWithProviders = RouterModule.forRoot(APP_ROUTES);
