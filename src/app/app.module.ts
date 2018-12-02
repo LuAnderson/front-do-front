@@ -1,3 +1,4 @@
+import { MenuSimuladoComponent } from './simulados/menu-simulado/menu-simulado.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -20,7 +21,8 @@ import { routing } from './app-routing.module';
     AulasComponent,
     FooterComponent,
     SimuladosComponent,
-    CardsComponent
+    CardsComponent,
+    MenuSimuladoComponent,
   ],
   imports: [
     BrowserModule,
