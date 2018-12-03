@@ -6,7 +6,8 @@ import { SimuladosComponent } from './simulados/simulados.component';
 
 const APP_ROUTES: Routes = [
   {path: '', component: MainComponent},
-  {path: 'desenvolvimento', component: SimuladosComponent},
+  {path: 'inicio', component: MainComponent},
+  {path: 'simulado', component: SimuladosComponent},
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(APP_ROUTES);

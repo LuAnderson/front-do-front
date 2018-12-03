@@ -3,21 +3,25 @@
     color: white;
     padding: 10px;
 
-    bottom: 0px;
+    bottom: -1px;
     display: inline-flex;
     position: absolute;
     width: -webkit-fill-available;
     width: -moz-available;
     
-    div{
+    a {
+        color: inherit; 
+        text-decoration: inherit; 
         display: block;
-        text-align: center;
-        text-transform: uppercase;
         margin: auto;
-
-        i{
-            font-size: 2em;
-            margin: 15px;
+        div{
+            text-align: center;
+            text-transform: uppercase;
+    
+            i{
+                font-size: 2em;
+                margin: 15px;
+            }
         }
     }
 }
