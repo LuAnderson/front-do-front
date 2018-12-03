@@ -1,6 +1,9 @@
 .simulado-cards{
-    overflow: auto;
     background: #4c4d4f;;
+
+    overflow: auto;
+    height: -webkit-fill-available;
+    height: -moz-min-content;
 
     .grupo-ano{
         display: grid;
@@ -82,11 +85,13 @@
 
             .situacao{
                 background: #808080;
-                left: 5vw;
+                left: 4vw;
+                font-size: 0.9em;
+                padding: 15px 5px 10px 5px;
 
                 &::before{
                     border-right: 20px solid #000000;
-                    left: -6.5em;
+                    left: -6.3em;
                 }
             }
         }
@@ -96,7 +101,8 @@
 
 @media only screen and (max-width: 620px) {
     .simulado-cards {
-        max-height: 500vw;
+        height: -webkit-fill-available;
+        height: -moz-min-content;
         overflow: scroll;
 
         .grupo-ano{

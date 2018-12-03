@@ -3,7 +3,9 @@
     grid-gap: 10px;
     grid-template-columns: auto auto auto;
     background-color: #4c4d4f;
-    max-height: 210vw;
+    height: -webkit-fill-available;
+    height: -moz-min-content;
+
     overflow: auto;
 
     .caixa-semana {
