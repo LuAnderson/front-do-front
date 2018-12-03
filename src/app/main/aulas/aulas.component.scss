@@ -2,7 +2,7 @@
     display: grid;
     grid-gap: 10px;
     grid-template-columns: auto auto auto;
-    background-color: rgb(76, 77, 79);
+    background-color: #4c4d4f;
     max-height: 210vw;
     overflow: auto;
 
@@ -11,7 +11,7 @@
         justify-self: center;
 
         border-radius: 10em;
-        box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+        box-shadow: inset 0px 0px 5px 5px #00000080;
 
         display: inline-flex;
         margin: 6px;

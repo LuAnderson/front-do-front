@@ -1,6 +1,6 @@
 .simulado-cards{
     overflow: auto;
-    background: red;
+    background: #4c4d4f;;
 
     .grupo-ano{
         display: grid;
@@ -8,6 +8,7 @@
     }
     
     .ano{
+        color: #fff;
         text-align: center;
         font-weight: bold;
         padding: 20px 0;
@@ -23,7 +24,7 @@
         margin: 2em 1em;
         padding: 20px;
         display: inline-block;
-        border-left: 5px solid blue;
+        border-left: 5px solid #0000ff;
         border-radius: 15px;  
     
         .situacao{
@@ -53,7 +54,7 @@
         }
     
         .modalidade{
-            color: white;
+            color: #ffffff;
             display: inline-block;
             margin: auto;
             font-size: 2em;
@@ -65,20 +66,52 @@
         }
     
         .descricao{
-            color: white;
+            color: #ffffff;
             font-size: .75em;
         }
     
         &.indisponivel{
-            background: #565454;
+            background: #3e3d3d;
             border-left: 5px solid lightgray;
-    
+            
+
+            .modalidade,
+            .descricao{
+                color: #5b5b5b;
+            }
+
             .situacao{
-                background: gray;
-    
+                background: #808080;
+                left: 5vw;
+
                 &::before{
-                    border-right: 20px solid black;
+                    border-right: 20px solid #000000;
+                    left: -6.5em;
                 }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 620px) {
+    .simulado-cards {
+        max-height: 500vw;
+        overflow: scroll;
+
+        .grupo-ano{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        
+        .card{
+            height: 25vw;
+            width: 30vw;
+            border-radius: 10px;
+            margin: 2em .75em;
+            
+            .situacao{
+                left: 10vw;
             }
         }
     }
