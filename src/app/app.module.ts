@@ -12,6 +12,10 @@ import { SimuladosComponent } from './simulados/simulados.component';
 import { routing } from './app-routing.module';
 import { FooterSimuladoComponent } from './simulados/footer-simulado/footer-simulado.component';
 import { MenuSimuladoComponent } from './simulados/menu-simulado/menu-simulado.component';
+import { QrcodeComponent } from './main/qrcode/qrcode.component';
+import { ChatComponent } from './main/chat/chat.component';
+import { QuestoesComponent } from './main/questoes/questoes.component';
+import { SlideComponent } from './main/slide/slide.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +29,10 @@ import { MenuSimuladoComponent } from './simulados/menu-simulado/menu-simulado.c
     CardsComponent,
     MenuSimuladoComponent,
     FooterSimuladoComponent,
+    QrcodeComponent,
+    ChatComponent,
+    QuestoesComponent,
+    SlideComponent,
   ],
   imports: [
     BrowserModule,
